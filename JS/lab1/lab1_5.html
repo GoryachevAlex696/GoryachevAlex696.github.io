@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab1_5</title>
+</head>
+<body>
+    
+    <script type="text/javascript">
+        'use strict';
+
+        let n = prompt("Введите кол-во строк: ");
+        let count, dog = 0, cat = 0, str = "";
+
+        for (let i = 0; i < n; i++) {
+
+            count = 0;
+
+           while(count < 6) {
+                if (dog < 3) {
+                    str += "dog ";
+                    dog++;
+                    count++;
+                } else 
+                    if (cat < 2) {
+                    str += "cat ";
+                        cat++;
+                            count++;
+                } else {
+                    
+                    dog = 0;
+                        cat = 0;
+                }
+
+            }
+            str += "\n";
+           
+        }
+
+        console.log(str);
+
+        // var foo = {baz: "dog", goo: "cat"};
+
+        // for(let i = 0; i < n; i++){
+
+        //     console.log(foo.baz);
+        //     console.log("\t");
+
+        // }
+
+
+    </script>
+
+</body>
+</html>
